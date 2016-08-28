@@ -1,0 +1,613 @@
+/**{outline: 1px solid red;}*/
+@font-face {
+  font-family: 'Lombok';
+  src: url("../fonts/Lombok.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+::-moz-selection {color: white; background: #0DC0C0;}
+::selection {color: white; background: #0DC0C0;}
+
+.navbar-inverse {
+  background-color: transparent;
+  border-color: rgba(9, 9, 9, 0);
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+  padding: 15px 23px;
+  margin: 0px 6px;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #ad124a;
+  background-color: transparent;
+  border:1px solid #ad124a;
+}
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #ad124a;
+  background-color: transparent;
+  border:1px solid #ad124a;
+}
+.navbar-brand {
+  display: none;
+  transition: all 0.8s ease-in-out;
+}
+
+#menu.active {
+  background-color:#367080 /**41C9B2*/;
+  padding: 0px 0px 17px;
+  webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 0s ease-in-out;
+  -moz-transition: all 0s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-transform: translateZ(0);
+}
+
+#menu.active .navbar-brand {
+  display: inherit;
+  transition: all 0.8s ease-in-out;
+}
+
+#menu.active ul {
+  transform: translateX(0);
+  transition: all 0.8s ease-in-out;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+}
+
+nav {font-size: 1.4em;}
+
+nav a {
+  font-size: 0.9em;
+  color: white;
+  margin: 0% 3%;
+  font-family:"Montserrat";
+  font-size: 16px;
+}
+
+nav a:hover {color: #0DC0C0;}
+
+.navbar-collapse {margin-top: 20px;}
+
+.navbar-brand img {
+  width: 80px;
+  margin-top: -7px;
+}
+
+.op {height: 50vh;}
+
+.navbar-nav {
+  transform: translateX(-13em);
+  transition: all 0.8s ease-in-out;
+}
+
+/*principal*/
+.fondo-portada {
+  text-align: center;
+  height: 100vh;
+  background: url("../img/foto1.png") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.fondo-portada .opacidad {
+  background: url("../images/pattern.svg") repeat scroll 0 0 rgba(0, 0, 0, 0.70); /*0.49*/
+  width: 100%;
+  height: 100vh;
+}
+.fondo-portada .text-center{margin-top:-300px; width: 45%;}
+.fondo-portada canvas {margin-top: 16em; width: 35%;}
+.fondo-portada .title {
+  font-family: "Montserrat";
+  color: white;
+  font-size: 1.5em;
+}
+
+/*------sobre miii---*/
+#about_me{
+background-image: url("../img/raya10.png");
+background-repeat: no-repeat;
+width: 100%;
+/*padding-top: 75px;*/
+}
+#about_me .foto{width: 90%;}
+.about {padding: 4% 0%; background-color: #FFFFFF;}
+.about h1 {
+  font-family: "Lombok";
+  font-weight:bolder;
+  text-align: center;
+  color: #CC426E;}
+.about p {
+  text-align: center;
+  font-size: 17.5px;
+  color: #999999;}
+.about .texto {
+  text-align: center;}
+.about.texto.marquee{
+  height:150px; 
+  width:350px;
+}
+.about.texto.marquee.imagen-icon{width: 30%;}
+
+/*habilidadessss---------*/
+.habilidades #habili{
+  /*padding-top: 50px;*/
+}
+.habilidades {
+  padding: 5% 0% 0% 0%;
+}
+.habilidades nav .btn1{
+  background-color: #367080;padding: 7px;font-size: 20px;
+}
+.habilidades nav .btn2{
+  background-color: #367080;padding: 7px;font-size: 20px;
+}
+.habilidades{background-image: url("../img/raya11.png");
+background-repeat: no-repeat;
+width: 100%;}
+
+.habilidades .habilid-titulo {
+  font-family: "Lombok";
+  font-weight: 900;
+  text-align: center;
+  color: #CC426E;
+  padding: 20px 0px 45px;
+  margin-bottom: 190px;   /* -70px*/
+}
+
+/**Variables **/
+@import "compass/css3";
+$white: #fff;
+.title {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+/* #main**/
+#main-content #contacts, {
+  padding: 20px 0;
+}
+.divider {
+  display: block;
+  width: 35px;
+  height: 3px;
+  margin: 10px auto 20px;
+  background-color: red;
+}
+.headline {
+  color: #999;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 100;
+  text-align: center;
+}
+#habili .titu-central {
+  padding: 20px 0;
+  z-index: 999;
+  width : 177px;
+    height : 81px;
+    position: absolute;
+    top: -55px;   /*135px*/
+    left: 50%;
+    margin-left: -88.5px;
+  }
+/*rotacion*/
+@keyframes rotate {from {transform: rotate(0deg);}
+to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+to {-webkit-transform: rotate(360deg);}}
+.rotateMe{
+-webkit-animation: 3s rotate linear infinite;
+animation: 3s rotate linear infinite;
+-webkit-transform-origin: 50% 50%;
+transform-origin: 50% 50%;
+}
+/*fin rotacion*/
+#habili .titu-central .rueda { 
+  position:relative;
+    width: 60%;
+    left:30px;   /*45px*/
+    top: -70px;    /*-30px*/
+    display : block;
+    color: #fff;
+    &:hover {
+      opacity: 0.8;
+      text-decoration:none;
+    }
+}
+#habili .habili-content h1 {
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+}
+#habili .habili-content hr{text-align: center; color: white;}
+#habili .habili-content /*h2*/ img {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-right: 5px;
+  width: 10%;
+  left: 8%;
+  position: relative;
+}
+#habili .habili-content .cuatro{width: 9%;margin-right: 5px;}
+#habili .habili-content .cinco{padding-top: 25px;margin-right: 5px;}
+#habili .habili-content .seis{padding-top: 55px;margin-right: 5px;}
+#habili .habili-content .siete{padding-top: 20px;margin-right: 5px;}
+#habili .habili-content .ocho{padding-top: 12px;}
+
+#habili .habili-content .imagen-desing {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 20px;
+  width: 10%;
+  left: 35%;
+  position: relative;
+}
+.habili-semicircle-inner {
+  background-color: #4ebcc2;
+  height: 150px;
+  width: 250px;
+  display:block;
+  -moz-border-radius:125px 125px 0 0;
+  -webkit-border-radius: 125px 125px 0 0;
+  border-radius: 125px 125px 0 0;
+  position: absolute;
+  left: 50%; 
+  margin-left: -125px;
+  margin-top: -100px;
+  z-index: 3;
+}
+#habili-semicircle-pointer {
+  width: 160px;
+  border-bottom: 20px solid #4ebcc2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -160px;
+  margin-top: 130px;
+  z-index: 2;
+  @include transform-origin(100%, 50%);
+}
+/* Home info */
+.habili-info-outer {
+  background: #4ebcc2;
+  position: relative;
+  top: 0px;
+  z-index: 5;
+}
+.habili-info {
+  padding: 20px 0;
+  min-height: 150px;
+}
+.habili-info-block {
+  display: none;
+}
+#habili nav ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+} 
+#habili li a:hover,
+#habili li.active a {
+  text-decoration: none;
+}
+
+#habili nav a {
+  font: 400 20px/1 $base_font;
+  text-transform: uppercase;
+  color:#367080;
+}
+#habili nav ul li {
+  display: inline-block;
+}
+#habili .first-position {
+  position: relative;
+  left: -180px;
+  top: -40px;    /*180px*/
+}
+.first-rotation {
+  @include transform ( rotate(26deg) );
+}
+
+#habili .fifth-position {
+  position: relative;
+  left: 100px;
+  top: -40px;        /*180px*/
+  font-size: 20px;
+}
+.fifth-rotation {
+  @include transform ( rotate(156deg) );
+}
+
+.ease-rotation {
+ @include transition (all 0.5s ease-out);
+}
+
+/*------trabajoss---*/
+
+#trabajos{background-color: #000;padding: 4% 0% 6% 0% /*5em 0em 6em 0em*/; }
+.mistrabajos h1 {
+  font-family: "Lombok";
+  font-weight: 900;
+  text-align: center;
+  color: white;
+}
+.trabajos-port{padding:1% 0%;}
+.mistrabajos .cuadro{padding: 10px 30px 10px 30px;}
+/*-------------------------*/
+.mistrabajos .cuadro .hovereffect .titu-flat{
+  margin-top:-180px;
+}
+.mistrabajos .cuadro .hovereffect .titu-repu{
+  margin-top:-180px;
+}
+.mistrabajos .cuadro .hovereffect .titu-agen{
+  margin-top:-185px;
+}
+.mistrabajos .cuadro .interior{
+  width: 350px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  position: relative;
+  bottom: 250px;
+  margin: auto;
+  padding: 20px;
+}
+.mistrabajos .cuadro .interior1{
+  width: 350px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  position: relative;
+  bottom: 250px;
+  margin: auto;
+  padding: 20px;
+}
+.mistrabajos .cuadro .interior1 .img-comu{
+  width: 35%;margin: auto;
+}
+.mistrabajos .cuadro .interior2{
+  width: 350px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  position: relative;
+  bottom: 250px;
+  margin: auto;
+  padding: 34px 20px;
+}
+.mistrabajos .cuadro .interior3{
+  width: 350px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  position: relative;
+  bottom: 250px;
+  margin: auto;
+  padding: 44px 20px;
+}
+.mistrabajos .cuadro .interior3 .img-prim{
+  width: 75%;margin: auto;
+}
+.mistrabajos .cuadro .interior4{
+  width: 350px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  position: relative;
+  bottom: 250px;
+  margin: auto;
+  padding: 20px 20px;
+}
+.mistrabajos .cuadro .interior4 .img-cips{
+  width: 75%;margin: auto;
+}
+.mistrabajos .cuadro .interior5{
+  width: 350px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  position: relative;
+  bottom: 250px;
+  margin: auto;
+  padding: 60px;
+}
+
+.images-projects {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 50px; }
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: #367080;
+  margin-top: 30px; }
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 50px 20px; }
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.hovereffect:hover img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.hovereffect h5 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  overflow: hidden;
+  padding: 0.5em 0;
+  background-color: transparent; }
+
+.hovereffect h5:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0); }
+
+.hovereffect:hover h5:after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  font-size: 18px; }
+
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+.hovereffect .btn{background-color: #367080;}
+
+/*connntactooooo-------*/
+.contacto {
+  background-color: black;
+  padding: 5em 0em;}
+.contacto h1 {
+  font-family: "Lombok";
+  font-weight: 900;
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+.contacto a {
+  color: #D2D2D2;
+  font-size: 17px;
+  line-height: 30px;
+  font-family: "Montserrat";
+}
+.contacto .row{margin-top: 30px;}
+.contacto a:hover { color: white; text-decoration: none;}
+.contacto .fp {padding-right: 15px; font-size: 40px; color:#367080;}
+
+/*fffoooterrr------*/
+footer {padding: 2em 0em; color: white;}
+footer h5{text-align: center;}
+
+/*reeesponsive-----*/
+@media (max-width: 750px){
+  .navbar-brand img {
+    width: 60px;
+  }
+  .fondo-portada .text-center{
+    margin-top:-100px; width: 80%;
+  }
+  #about_me .foto{
+    margin-left: 20px;
+  }
+  .habilidades .habilid-titulo {
+    margin-bottom: 200px;   /*-20px*/
+  }
+  .habilidades nav .btn1{
+    padding: 5px;font-size: 15px;
+    margin-right: -423px;
+    margin-top: -280px;
+  }
+  .habilidades nav .btn2{
+    padding: 5px;font-size: 15px;
+    margin-top: -80px;   /*-260px*/
+    margin-left: -40px;    /*-150px*/
+  }
+  #habili nav a {
+    font: 400 20px/1 $base_font;
+    color:#367080;
+  }
+  .habili-info {
+  min-height: 130px;
+  }
+  #habili .habili-content /*h2*/ img {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-right:10px; 
+  margin-bottom: -30px;
+  width: 18%;
+  /*left: 10%;*/
+  }
+  #habili .habili-content .cuatro{width: 16%;}
+  #habili .habili-content .cinco{padding-top: 25px;margin-right:10px; }
+  #habili .habili-content .seis{padding-top: /*44px*/ 38px;margin-right:10px; }
+  #habili .habili-content .siete{padding-top: 20px;margin-right:10px; }
+  #habili .habili-content .ocho{padding-top: 17px;}
+  #habili .habili-content .imagen-desing {
+  padding-top: 20px;
+  width: 18%;
+  left: 20%;
+  }
+  #habili .fifth-position {
+  left: 0px;
+  top: -100px;         /*180*/
+  font-size: 20px;
+  }
+  .habili-semicircle-inner {
+  margin-left: -117px;   /*-85px*/
+  height: 130px;
+  width: 230px;
+  }
+  #habili .titu-central .rueda {
+    top: -70px;
+    left:35px;
+    width: 55%;
+  }
+  #habili-semicircle-pointer{
+    margin-top: 120px;
+  }
+  .mistrabajos .cuadro .int img{
+    width: 75%;
+    margin: auto;
+    left:-35px;
+  }
+  .mistrabajos .cuadro .hovereffect .titu-flat{
+    margin-top:-150px;
+  }
+  .mistrabajos .cuadro .hovereffect .titu-repu{
+    margin-top:-160px;
+  }
+  .mistrabajos .cuadro .hovereffect .titu-agen{
+    margin-top:-175px;
+  }
+  footer h5{text-align: center;}
+
+}

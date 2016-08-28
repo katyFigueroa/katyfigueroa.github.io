@@ -1,0 +1,5 @@
+   .mistrabajos .cuadro .int img{
++  width: 75%;
++  margin: auto;
+   left:-35px;
+ }
